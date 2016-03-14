@@ -1,0 +1,31 @@
+{
+  "name": "redis-scan",
+  "version": "1.0.0",
+  "description": "Promise-backed Redis SCAN helper",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test"
+  },
+  "keywords": [
+    "redis",
+    "scan"
+  ],
+  "engines": {
+    "node": ">=5.8.0"
+  },
+  "author": "Sandro Pasquali <spasquali@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "redis-hook": "^1.0.1",
+    "shortid": "^2.2.4",
+    "surveyor": "^2.0.1"
+  },
+  "dependencies": {
+    "bluebird": "^3.3.4",
+    "debug": "^2.2.0",
+    "lodash": "^4.6.1"
+  }
+}
