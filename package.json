@@ -27,5 +27,13 @@
     "bluebird": "^3.3.4",
     "debug": "^2.2.0",
     "lodash": "^4.6.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandro-pasquali/redis-scan.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sandro-pasquali/redis-scan/issues"
+  },
+  "homepage": "https://github.com/sandro-pasquali/redis-scan#readme"
 }
