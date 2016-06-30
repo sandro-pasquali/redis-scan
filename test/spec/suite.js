@@ -3,7 +3,9 @@
 let util = require('util');
 let debug = require('debug')('test');
 let _ = require('lodash');
-let client = require('redis-hook')({});
+let client = require('redis-hook')({
+    host: 'localhost'
+});
 let shortid = require('shortid');
 let scan = require('../../lib')(client);
 
@@ -35,7 +37,7 @@ module.exports = function(test, Promise) {
 
         return acc;
 
-    }, [], 'zscan', testKey))
+    }, [], 'zscan', { key: testKey }))
 
     .then((acc) => {
 
@@ -56,7 +58,7 @@ module.exports = function(test, Promise) {
 
             return acc;
 
-        }, [], 'zscan', testKey);
+        }, [], 'zscan', { key: testKey });
     })
     .then((acc) => {
 
